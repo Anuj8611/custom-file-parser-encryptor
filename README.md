@@ -20,3 +20,27 @@ and reversible key-based encryption using byte-level operations.
 
 ## 🧱 File Format Specification
 
+<p align="left">
+  <img src="docs/format.png" width="520" />
+</p>
+
+---
+
+## 🛠️ Tech Stack
+
+- Java (Standard Library only)
+- FileInputStream / FileOutputStream
+- ByteBuffer
+- Bitwise operations
+- CRC32 checksum
+
+---
+
+## 🚀 Usage (CLI)
+
+```bash
+# Encode a file
+java cli.Main encode sample.txt key123
+
+# Decode a file
+java cli.Main decode sample.encx key123
